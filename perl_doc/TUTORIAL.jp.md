@@ -44,7 +44,7 @@ Windows 環境では、Strawberry Perl などをインストールする。
 
 ## 動作確認
 
-ダウンロードした `TreeMatchLib.pm` と `TreeWrapperBase.pm`と同じディレクトリに以下の Perl のスクリプト (ここでは `sample.pl` とする) を作り Perl を実行できる環境で
+ダウンロードした `TreeMatchLib.pm` と `TreeWrapperBase.pm` (`perl_deploy` ディレクトリのもの) と同じディレクトリに以下の Perl のスクリプト (ここでは `sample.pl` とする) を作り Perl を実行できる環境で
 ```
 perl -I. sample.pl
 ```

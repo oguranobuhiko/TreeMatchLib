@@ -44,7 +44,7 @@ On Windows, consider installing Strawberry Perl.
 
 ## First run
 
-Place the downloaded TreeMatchLib.pm and TreeWrapperBase.pm in the same directory.
+Place the downloaded `TreeMatchLib.pm` and `TreeWrapperBase.pm` (from `perl_deploy` directory) in somewhere same directory.
 Then create the following Perl script (filename=`sample.pl` here) in the directory.
 And run it in a Perl-executable environment using the following command.
 ```
