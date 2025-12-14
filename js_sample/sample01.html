@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <script src="../js_deploy/TreeMatchLib.js"></script>
+        <style>
+            pre {
+                margin: 0px;
+                padding: 0px 8px;
+                font-size: 14px;
+                background-color: #eef7f7;
+                font-family: SFMono-Regular, Consolas, 'Courier New', 'BIZ UDGothic', Meiryo, monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- =======================================================-->
+
+        <div style="height: 10px"></div>
+        <code id="output"></code>
+        <div style="height: 10px"></div>
+
+        <!-- =======================================================-->
+
+        <script>
+'use strict';
+
+// (import TreeMatchLib.js)
+
+var Tree1 = useNewTreeClass('Tree1', '__k0', '__k1');
+
+///////////////////////////////////////////////////////////////
+function print_last(s)
+{
+    // let n = document.createElement("p");
+    let n = document.createElement("pre");
+    n.textContent = String(s);
+    document.getElementById("output").appendChild(n);
+}
+function print_clear()
+{
+    document.getElementById("output").innerHTML = '';
+}
+///////////////////////////////////////////////////////////////
+window.addEventListener('load', function(){
+
+    try {
+
+        let target = TreeConstruct(Tree1, 'A >B (C > D) E').Tree();
+        target.TreePrint(print_last);
+
+        let result;
+        if (result = TreeMatch(target, 'A > . C > .##x'))
+        {
+            print_last("MATCH\n");
+            print_last(result.Capture('x').Node().Attr0() + "\n");
+        }
+    } catch (err) {
+        print_last(err.message);
+        console.log('Error');
+        console.log(err);
+        throw new Error(err.message, { cause: err });
+    }
+});
+
+///////////////////////////////////////////////////////////////
+        </script>
+
+    </body>
