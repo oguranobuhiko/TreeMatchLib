@@ -7,7 +7,7 @@ Manual document is wip.
 
 ## Perl version
 
-See [perl\_doc/TUTORIAL.md](perl_doc/TUTORIAL.md) for tutorial document.
+See [perl\_doc/TUTORIAL.md](perl_doc/TUTORIAL.md) for tutorial document. (or [perl\_doc/TUTORIAL.jp.md](perl_doc/TUTORIAL.jp.md) ...)
 
 (Use `.pm` files in perl\_deploy folder.)
 
