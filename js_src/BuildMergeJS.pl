@@ -84,6 +84,11 @@ my @target_files = map {
         TreeMatchLibSrc.js
     } ;
 
+unshift @target_files, {
+    src => '..\LICENSE.txt',
+    proc_file => sub { while(<$fh_i>) { OUTPUT "// " . $_; } }
+};
+
 my @export_symbols = qw{
     TreeWrapperBase
     TreeWrapperBaseIterator

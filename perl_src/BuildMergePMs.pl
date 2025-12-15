@@ -70,7 +70,11 @@ my $dst_dir = '../perl_deploy';
 my $src_dir = '.';
 
 OPEN_OUTPUT_FILE "TreeWrapperBase.pm";
-MERGE_FILES({
+MERGE_FILES(
+{
+    src => '..\LICENSE.txt',
+    proc_file => sub { while(<$fh_i>) { OUTPUT "# " . $_; } }
+},{
     src => 'MyAssertType.pm',
     proc_file => sub { while(<$fh_i>) { OUTPUT $_; } }
 },{
@@ -91,7 +95,11 @@ CLOSE_OUTPUT_FILE();
 
 OPEN_OUTPUT_FILE "TreeMatchLib.pm";
 
-MERGE_FILES({
+MERGE_FILES(
+{
+    src => '..\LICENSE.txt',
+    proc_file => sub { while(<$fh_i>) { OUTPUT "# " . $_; } }
+},{
     src => 'TLLex.pm',
     proc_file => sub { while(<$fh_i>) { OUTPUT $_; } }
 },{
