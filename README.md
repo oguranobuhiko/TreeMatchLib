@@ -33,7 +33,7 @@ Nobuhiko Ogura
 
 Yuki Hirano : discussion on basic specification and initial prototype.
 
-Shogo Matsuhashi : non ordered match specification and its initial prototype.
+Tougo Matsuhashi : non ordered match specification and its initial prototype.
 
 Harumi Watanabe : discussion on general specification / use-cases.
 
