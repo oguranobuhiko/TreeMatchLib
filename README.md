@@ -25,6 +25,14 @@ Lacking documents.
 - Testing in JS runtime environments.
 - Need to clean up unvaracious comments in codes.
 
+## Related Project
+
+### TreeMatchLib Playground
+
+[TreeMatchLib Playground](https://github.com/takuto0318/playground_M2) is an interactive environment for trying out TreeMatchLib patterns.
+
+It can be used to experiment with pattern matching behavior and explore TreeMatchLib patterns interactively.
+
 ## Author
 
 Nobuhiko Ogura
